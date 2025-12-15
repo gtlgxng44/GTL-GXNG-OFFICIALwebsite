@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTL GXNG - Official Discography</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .streaming-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .streaming-btn {
+            background: rgba(255,255,255,0.2);
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: all 0.3s;
+            backdrop-filter: blur(10px);
+        }
+
+        .streaming-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid rgba(255,255,255,0.3);
+            padding-bottom: 10px;
+        }
+
+        .albums-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .album-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            transition: all 0.3s;
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+
+        .album-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.15);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .album-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .album-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .album-year {
+            background: rgba(255,255,255,0.3);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .album-type {
+            font-size: 0.85em;
+            opacity: 0.8;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .songs-list {
+            list-style: none;
+        }
+
+        .song-item {
+            padding: 10px;
+            margin: 5px 0;
+            background: rgba(255,255,255,0.05);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.2s;
+        }
+
+        .song-item:hover {
+            background: rgba(255,255,255,0.15);
+            padding-left: 15px;
+        }
+
+        .song-number {
+            font-weight: bold;
+            opacity: 0.6;
+            min-width: 25px;
+        }
+
+        .featured {
+            color: #ffd700;
+            font-size: 0.85em;
+        }
+
+        .bio-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            border: 2px solid rgba(255,255,255,0.2);
+            margin-bottom: 30px;
+        }
+
+        .bio-text {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .bio-text:last-child {
+            margin-bottom: 0;
+        }
+
+        .bio-text strong {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 60px;
+            border-top: 2px solid rgba(255,255,255,0.2);
+            opacity: 0.7;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            
+            .albums-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GTL GXNG</h1>
+            <p class="subtitle">Nairobi, Kenya 🇰🇪 → UK Hip-Hop/Rap Artist</p>
+            <div class="streaming-links">
+                <a href="https://open.spotify.com" class="streaming-btn" target="_blank">🎵 Spotify</a>
+                <a href="https://music.apple.com" class="streaming-btn" target="_blank">🍎 Apple Music</a>
+                <a href="https://www.amazon.com/music" class="streaming-btn" target="_blank">🎧 Amazon Music</a>
+            </div>
+        </header>
+
+        <div class="section">
+            <h2 class="section-title">About GTL GXNG</h2>
+            <div class="bio-card">
+                <p class="bio-text">
+                    Hailing from <strong>Nairobi, Kenya</strong>, GTL GXNG is an emerging hip-hop/rap collective making waves in the UK music scene. The group features members including <strong>Deno</strong>, bringing a unique perspective shaped by their Kenyan roots. GTL GXNG blends contemporary UK rap with melodic elements and an authentic East African edge, creating a distinctive sound that stands out in the British hip-hop landscape.
+                </p>
+                <p class="bio-text">
+                    The collective has been building momentum with a strong catalog of releases, working with talented artists like <strong>Lucky</strong> and <strong>LUCCI</strong>, showcasing versatility and a commitment to creating diverse musical experiences. Tracks like "LIFESTYLE - FREESTYLE," "Lit," "Kid Freestyle," "HBDAY," "POOKIE DUSKI," and "DUSKIE" demonstrate GTL GXNG's raw talent and authentic storytelling ability.
+                </p>
+                <p class="bio-text">
+                    With a prolific output that includes multiple albums, EPs, and singles released in 2024 and 2025, GTL GXNG represents the new generation of UK rap artists who are shaping the sound of British hip-hop. Their music explores themes of urban life, relationships, and personal experiences, delivered with authentic energy and contemporary production.
+                </p>
+                <p class="bio-text">
+                    From the introspective tracks on albums like "moon and stars" to the hard-hitting singles like "GENESIS" featuring LIFESTYLE - FREESTYLE, GTL GXNG continues to evolve as a collective, consistently dropping new music and building a dedicated fanbase across streaming platforms. Representing Nairobi on the global stage, GTL GXNG bridges African and UK musical influences, contributing to the increasingly diverse and international sound of British hip-hop.
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Albums & EPs (2025)</h2>
+            <div class="albums-grid">
+                <div class="album-card">
+                    <div class="album-header">
+                        <h3 class="album-title">GENESIS</h3>
+                        <span class="album-year">2025</span>
+                    </div>
+                    <p class="album-type">Album</p>
+                    <ul class="songs-list">
+                        <li class="song-item">
+                            <span class="song-number">1.</span>
+                            <span>LIFESTYLE - FREESTYLE <span class="featured">(feat. LUCCI)</span></span>
+                        </li>
+                        <li class="song-item">
+                            <span class="song-number">2.</span>
+                            <span>Lit</span>
+                        </li>
+                        <li class="song-item">
+                            <span class="song-number">3.</span>
+                            <span>Kid Freestyle</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="album-card">
+                    <div class="album-header">
+                        <h3 class="album-title">GXNG</h3>
+                        <span class="album-year">2025</span>
+                    </div>
+                    <p class="album-type">EP - 4 Songs</p>
+                    <ul class="songs-list">
+                        <li class="song-item">
+                            <span class="song-number">1.</span>
+                            <span>Track 1</span>
+                        </li>
+                        <li class="song-item">
+                            <span class="song-number">2.</span>
+                            <span>Track 2</span>
+                        </li>
+                        <li class="song-item">
+                            <span class="song-number">3.</span>
+                            <span>Track 3</span>
+                        </li>
+                        <li class="song-item">
+                            <span class="song-number">4.</span>
+                            <span>Track 4</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="album-card">
+                    <div class="album-header">
+                        <h3 class="album-title">VALENTINO (KISS MY TEETH)</h3>
+                        <span class="album-year">2025</span>
+                    </div>
+                    <p class="album-type">EP</p>
+                    <ul class="songs-list">
+                        <li class="song-item">
+                            <span class="song-number">1.</span>
+                            <span>KISS MY TEETH</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Albums (2024)</h2>
+            <div class="albums-grid">
+                <div class="album-card">
+                    <div class="album-header">
+                        <h3 class="album-title">44</h3>
+                        <span class="album-year">2024</span>
+                    </div>
+                    <p class="album-type">Album</p>
+                </div>
+
+                <div class="album-card">
+                    <div class="album-header">
+                        <h3 class="album-title">POUND AND DOLLAR</h3>
+                        <span class="album-year">2024</span>
+                    </div>
+                    <p class="album-type">Album</p>
+                    <ul class="songs-list">
+                        <li class="song-item">
+                            <span class="song-number">1.</span>
+                            <span>GOD <span class="featured">(feat. Lucky)</span></span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="album-card">
+                    <div class="album-header">
+                        <h3 class="album-title">moon and stars</h3>
+                        <span class="album-year">2024</span>
+                    </div>
+                    <p class="album-type">Album</p>
+                    <ul class="songs-list">
+                        <li class="song-item">
+                            <span class="song-number">1.</span>
+                            <span>4 Oclock</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Singles (2025)</h2>
+            <div class="albums-grid">
+                <div class="album-card">
+                    <div class="album-header">
+                        <h3 class="album-title">NOOKIE</h3>
+                        <span class="album-year">2025</span>
+                    </div>
+                    <p class="album-type">Single</p>
+                    <ul class="songs-list">
+                        <li class="song-item">
+                            <span class="song-number">1.</span>
+                            <span>NOOKIE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="album-card">
+                    <div class="album-header">
+                        <h3 class="album-title">HBDAY</h3>
+                        <span class="album-year">2025</span>
+                    </div>
+                    <p class="album-type">Single</p>
+                    <ul class="songs-list">
+                        <li class="song-item">
+                            <span class="song-number">1.</span>
+                            <span>HBDAY</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="album-card">
+                    <div class="album-header">
+                        <h3 class="album-title">POOKIE DUSKI</h3>
+                        <span class="album-year">2025</span>
+                    </div>
+                    <p class="album-type">Single</p>
+                    <ul class="songs-list">
+                        <li class="song-item">
+                            <span class="song-number">1.</span>
+                            <span>POOKIE DUSKI</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="album-card">
+                    <div class="album-header">
+                        <h3 class="album-title">Cum n Go (Remix)</h3>
+                        <span class="album-year">2025</span>
+                    </div>
+                    <p class="album-type">Single</p>
+                    <ul class="songs-list">
+                        <li class="song-item">
+                            <span class="song-number">1.</span>
+                            <span>Cum n Go (Remix)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="album-card">
+                    <div class="album-header">
+                        <h3 class="album-title">DUSKIE</h3>
+                        <span class="album-year">2025</span>
+                    </div>
+                    <p class="album-type">Single</p>
+                    <ul class="songs-list">
+                        <li class="song-item">
+                            <span class="song-number">1.</span>
+                            <span>DUSKIE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="album-card">
+                    <div class="album-header">
+                        <h3 class="album-title">Dear X</h3>
+                        <span class="album-year">2025</span>
+                    </div>
+                    <p class="album-type">Single</p>
+                    <ul class="songs-list">
+                        <li class="song-item">
+                            <span class="song-number">1.</span>
+                            <span>Dear X</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="album-card">
+                    <div class="album-header">
+                        <h3 class="album-title">DECEMBER</h3>
+                        <span class="album-year">2025</span>
+                    </div>
+                    <p class="album-type">Single</p>
+                    <ul class="songs-list">
+                        <li class="song-item">
+                            <span class="song-number">1.</span>
+                            <span>DECEMBER</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>GTL GXNG - UK Hip-Hop/Rap Artist</p>
+            <p>Listen on all major streaming platforms</p>
+        </footer>
+    </div>
+</body>
+</html>
